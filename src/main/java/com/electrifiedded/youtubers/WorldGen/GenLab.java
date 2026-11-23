@@ -1,0 +1,112 @@
+package com.electrifiedded.youtubers.WorldGen;
+
+import com.electrifiedded.archaiclib.world.StagedWorld;
+import net.minecraft.util.math.BlockPos;
+import java.util.Random;
+import net.minecraft.entity.item.EntityPainting;
+import net.minecraft.init.Blocks;
+import net.minecraft.world.World;
+
+public class GenLab extends GenYoutuberStructure {
+   @Override
+   public boolean generate(World world, Random random, BlockPos pos) {
+      int i = pos.getX();
+      int j = pos.getY();
+      int k = pos.getZ();
+      this.remove_vegitation_circle(world, i, j, 15.0);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 3, j - 1, k - 3, i + 3, j - 1, k + 3);
+      this.genBox(world, Blocks.GOLD_BLOCK, 0, 0, i + 1, j - 1, k + 1, i + 3, j - 1, k + 3);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i + 2, j - 1, k + 2, i + 3, j - 1, k + 3);
+      this.genBox(world, Blocks.GOLD_BLOCK, 0, 0, i - 3, j - 1, k - 3, i - 1, j - 1, k - 1);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 3, j - 1, k - 3, i - 2, j - 1, k - 2);
+      this.genBox(world, Blocks.GOLD_BLOCK, 0, 0, i + 1, j - 1, k - 3, i + 3, j - 1, k - 1);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i + 2, j - 1, k - 3, i + 3, j - 1, k - 2);
+      this.genBox(world, Blocks.GOLD_BLOCK, 0, 0, i - 3, j - 1, k + 1, i - 1, j - 1, k + 3);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 3, j - 1, k + 2, i - 2, j - 1, k + 3);
+      this.setBlockState(world, new BlockPos(i, j - 1, k), Blocks.GOLD_BLOCK, 0);
+      this.setBlockState(world, new BlockPos(i - 3, j, k - 3), Blocks.QUARTZ_BLOCK, 2);
+      this.setBlockState(world, new BlockPos(i - 3, j + 1, k - 3), Blocks.QUARTZ_BLOCK, 2);
+      this.setBlockState(world, new BlockPos(i - 3, j + 2, k - 3), Blocks.LIT_REDSTONE_LAMP, 0);
+      this.setBlockState(world, new BlockPos(i - 3, j + 3, k - 3), Blocks.LEVER, 13);
+      this.setBlockState(world, new BlockPos(i - 3, j, k + 3), Blocks.QUARTZ_BLOCK, 2);
+      this.setBlockState(world, new BlockPos(i - 3, j + 1, k + 3), Blocks.QUARTZ_BLOCK, 2);
+      this.setBlockState(world, new BlockPos(i - 3, j + 2, k + 3), Blocks.LIT_REDSTONE_LAMP, 0);
+      this.setBlockState(world, new BlockPos(i - 3, j + 3, k + 3), Blocks.LEVER, 13);
+      this.setBlockState(world, new BlockPos(i + 3, j, k - 3), Blocks.QUARTZ_BLOCK, 2);
+      this.setBlockState(world, new BlockPos(i + 3, j + 1, k - 3), Blocks.QUARTZ_BLOCK, 2);
+      this.setBlockState(world, new BlockPos(i + 3, j + 2, k - 3), Blocks.LIT_REDSTONE_LAMP, 0);
+      this.setBlockState(world, new BlockPos(i + 3, j + 3, k - 3), Blocks.LEVER, 13);
+      this.setBlockState(world, new BlockPos(i + 3, j + 2, k + 3), Blocks.LIT_REDSTONE_LAMP, 0);
+      this.setBlockState(world, new BlockPos(i + 3, j + 3, k + 3), Blocks.LEVER, 13);
+      this.genBox(world, Blocks.COAL_BLOCK, 0, 0, i + 4, j - 1, k - 1, i + 5, j - 1, k + 1);
+      this.genBox(world, Blocks.COAL_BLOCK, 0, 0, i + 6, j, k - 1, i + 6, j + 2, k + 1);
+      this.genBox(world, Blocks.COAL_BLOCK, 0, 0, i + 4, j, k + 2, i + 5, j + 2, k + 2);
+      this.genBox(world, Blocks.COAL_BLOCK, 0, 0, i + 4, j, k - 2, i + 5, j + 2, k - 2);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 1, j - 1, k - 5, i + 1, j - 1, k - 4);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 1, j, k - 6, i + 1, j + 2, k - 6);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i + 2, j, k - 5, i + 2, j + 2, k - 4);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 2, j, k - 5, i - 2, j + 2, k - 4);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 2, j - 1, k + 5, i + 2, j - 1, k + 9);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 3, j - 1, k + 4, i + 3, j + 2, k + 4);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 2, j - 1, k + 10, i + 2, j - 1, k + 10);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 3, j - 1, k + 5, i - 3, j + 1, k + 9);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i + 3, j - 1, k + 5, i + 3, j + 1, k + 9);
+      this.genBox(world, Blocks.GLASS, 0, 0, i - 2, j, k + 10, i + 2, j + 2, k + 10);
+      this.genBox(world, Blocks.GLASS, 0, 0, i - 3, j + 2, k + 5, i - 3, j + 2, k + 9);
+      this.genBox(world, Blocks.GLASS, 0, 0, i + 3, j + 2, k + 5, i + 3, j + 2, k + 9);
+      this.genBox(world, Blocks.GLASS, 0, 1, i - 2, j + 3, k + 5, i + 2, j + 3, k + 9);
+      this.setBlockState(world, new BlockPos(i, j, k + 4), Blocks.IRON_DOOR, 1);
+      this.setBlockState(world, new BlockPos(i, j + 1, k + 4), Blocks.IRON_DOOR, 9);
+      this.setBlockState(world, new BlockPos(i, j, k + 3), Blocks.STONE_PRESSURE_PLATE, 0);
+      this.setBlockState(world, new BlockPos(i, j, k + 5), Blocks.STONE_PRESSURE_PLATE, 0);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i + 4, j - 1, k + 3, i + 10, j + 2, k + 6);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i + 7, j - 1, k, i + 10, j + 2, k + 2);
+      this.genBoxAir(world, 0, i + 4, j, k + 4, i + 9, j + 1, k + 5);
+      this.genBoxAir(world, 0, i + 8, j, k + 1, i + 9, j + 1, k + 3);
+      this.setBlockState(world, new BlockPos(i + 4, j, k + 4), Blocks.IRON_DOOR, 1);
+      this.setBlockState(world, new BlockPos(i + 4, j + 1, k + 4), Blocks.IRON_DOOR, 9);
+      this.setBlockToAir(world, new BlockPos(i + 4, j, k + 3));
+      this.setBlockToAir(world, new BlockPos(i + 4, j + 1, k + 3));
+      this.setBlockState(world, new BlockPos(i + 9, j, k), Blocks.IRON_DOOR, 1);
+      this.setBlockState(world, new BlockPos(i + 9, j + 1, k), Blocks.IRON_DOOR, 9);
+      this.setBlockState(world, new BlockPos(i + 8, j + 1, k - 1), Blocks.WOODEN_BUTTON, 4);
+      this.setBlockState(world, new BlockPos(i + 3, j + 1, k + 3), Blocks.WOODEN_BUTTON, 4);
+      this.setBlockState(world, new BlockPos(i + 5, j + 1, k + 4), Blocks.WOODEN_BUTTON, 3);
+      this.setBlockState(world, new BlockPos(i + 8, j + 1, k + 1), Blocks.WOODEN_BUTTON, 3);
+      this.setBlockState(world, new BlockPos(i + 9, j + 2, k + 5), Blocks.LIT_REDSTONE_LAMP, 0);
+      this.setBlockState(world, new BlockPos(i + 9, j + 3, k + 5), Blocks.LEVER, 13);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 7, j - 1, k - 3, i - 4, j + 2, k + 3);
+      this.genBoxAir(world, 0, i - 6, j, k - 2, i - 4, j + 2, k + 2);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 6, j, k + 6, i - 4, j + 2, k + 8);
+      this.genBoxAir(world, 0, i - 5, j + 1, k + 6, i - 4, j + 2, k + 7);
+      this.genBox(world, Blocks.IRON_BLOCK, 0, 0, i - 5, j, k + 4, i - 5, j + 2, k + 5);
+      this.setBlockState(world, new BlockPos(i - 4, j, k + 5), Blocks.IRON_BLOCK, 0);
+      this.setBlockState(world, new BlockPos(i - 4, j - 1, k + 4), Blocks.IRON_BLOCK, 0);
+      this.setBlockToAir(world, new BlockPos(i - 4, j, k + 3));
+      this.setBlockToAir(world, new BlockPos(i - 4, j + 1, k + 3));
+      this.setBlockState(world, new BlockPos(i - 5, j, k + 2), Blocks.QUARTZ_STAIRS, 5);
+      this.setBlockState(world, new BlockPos(i - 5, j, k + 1), Blocks.QUARTZ_STAIRS, 5);
+      this.setBlockState(world, new BlockPos(i - 5, j, k - 1), Blocks.QUARTZ_STAIRS, 5);
+      this.setBlockState(world, new BlockPos(i - 5, j, k - 2), Blocks.QUARTZ_STAIRS, 5);
+      this.setBlockState(world, new BlockPos(i - 4, j, k), Blocks.CARPET, 14);
+      this.setBlockState(world, new BlockPos(i - 5, j, k), Blocks.CARPET, 14);
+      this.setBlockState(world, new BlockPos(i - 6, j, k), Blocks.CARPET, 14);
+      this.setBlockState(world, new BlockPos(i - 6, j, k + 2), Blocks.CARPET, 14);
+      this.setBlockState(world, new BlockPos(i - 6, j, k + 1), Blocks.CARPET, 14);
+      this.setBlockState(world, new BlockPos(i - 6, j, k), Blocks.CARPET, 14);
+      this.setBlockState(world, new BlockPos(i - 6, j, k - 1), Blocks.CARPET, 14);
+      this.setBlockState(world, new BlockPos(i - 7, j + 1, k + 1), Blocks.GLASS_PANE, 0);
+      this.setBlockState(world, new BlockPos(i - 7, j + 1, k), Blocks.GLASS_PANE, 0);
+      this.setBlockState(world, new BlockPos(i - 7, j + 1, k - 1), Blocks.GLASS_PANE, 0);
+      this.setBlockState(world, new BlockPos(i - 6, j, k - 2), Blocks.IRON_BLOCK, 0);
+      this.setBlockState(world, new BlockPos(i - 6, j + 1, k - 2), Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, 0);
+      this.setBlockState(world, new BlockPos(i - 5, j + 1, k + 7), Blocks.IRON_BLOCK, 0);
+      this.setBlockState(world, new BlockPos(i - 5, j + 2, k + 7), Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, 0);
+      if (!world.isRemote) {
+         StagedWorld.onMain(() -> StagedWorld.spawnEntity(world, StagedWorld.newPainting(world, i - 6, j + 1, k - 3, 0, "Bomb")));
+         StagedWorld.onMain(() -> StagedWorld.spawnEntity(world, StagedWorld.newPainting(world, i - 5, j + 2, k + 8, 2, "Bomb")));
+      }
+
+      return false;
+   }
+}

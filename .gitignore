@@ -1,0 +1,8 @@
+build/
+.gradle/
+run/
+_todo/
+*.log
+audit.txt
+.idea/
+out/

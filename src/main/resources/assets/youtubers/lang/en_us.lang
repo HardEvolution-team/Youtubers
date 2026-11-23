@@ -1,0 +1,20 @@
+# Keys added by the 1.12.2 port. All other names come from the lang file of your original Youtubers+ jar (archaic_originals).
+item.CluckTool.name=Clucky Tool
+entity.youtubers.Youtuber.name=Youtuber
+entity.youtubers.RandomPlayer.name=Player
+entity.youtubers.DiamondMinecart.name=Diamond Minecart
+entity.youtubers.AdvEnderPearl.name=Advanced Ender Pearl
+entity.youtubers.CrazyEgg.name=Crazy Egg
+entity.youtubers.EventEgg.name=Event Egg
+entity.youtubers.cLUCKey.name=cLUCKey
+entity.youtubers.OceanicCreeper.name=Oceanic Creeper
+entity.youtubers.EnderFish.name=Ender Fish
+entity.youtubers.DesertScorpion.name=Desert Scorpion
+entity.youtubers.Mushroom.name=Mushroom
+entity.youtubers.Cactus.name=Cactus
+entity.youtubers.ExplosiveMushroom.name=Explosive Mushroom
+entity.youtubers.Snail.name=Snail
+entity.youtubers.CraigTheMailman.name=Craig the Mailman
+entity.youtubers.Grimm.name=Grim
+entity.youtubers.Bomby.name=Bomby
+entity.youtubers.Trayourus.name=Dr. Trayaurus

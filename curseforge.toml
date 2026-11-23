@@ -1,0 +1,11 @@
+project_id = 0
+jar = "build/libs/youtubers-1.1.2.jar"
+changelog = "CHANGELOG.md"
+changelog_type = "markdown"
+changelog_latest_only = true
+release_type = "release"
+game_versions = ["1.12.2", "Forge", "Client", "Server", "Java 21", "Java 25"]
+display_name = "Youtubers+ Mod Port 1.1.2"
+
+[dependencies]
+archaiclib = "required"
