@@ -1,0 +1,18 @@
+{
+  "_comment": "Where ArchaicLib downloads the original files of this port from. Edit freely; set locked=true to keep your edits when the mod updates. Files go to archaic_originals/ and are checked by sha256.",
+  "port": "youtubers",
+  "version": 3,
+  "locked": false,
+  "files": [
+    {
+      "file": "youtubers-1.8.0-MC1.7.10.jar",
+      "name": "youtubers-1.8.0-MC1.7.10.jar (Youtubers+ Mod 1.8.0 by supercat765)",
+      "sha256": "5ec776d44947581702b6557d14688275d8381baab8ba3806f1afd928879e36b8",
+      "size": 1745774,
+      "page": "https://www.curseforge.com/minecraft/mc-mods/youtubers-mod/files/2260130",
+      "mirrors": [
+        "https://mediafilez.forgecdn.net/files/2260/130/youtubers-1.8.0-MC1.7.10.jar"
+      ]
+    }
+  ]
+}
